@@ -21,10 +21,24 @@
     <ClCompile Include="CustomMain.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="src\Checkbox\Checkbox.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="CustomMain.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="src\Checkbox\Checkbox.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="Assets\AdvancedUI\Checkbox\CheckBoxEmptyEdited.PNG">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Assets\AdvancedUI\Checkbox\CheckBoxSelectedEdited.PNG">
+      <Filter>Resource Files</Filter>
+    </Image>
   </ItemGroup>
 </Project>

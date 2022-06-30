@@ -71,10 +71,12 @@
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
-    <IncludePath>($SolutionDir)SDL2\include;($SolutionDir)Shard2D\include;$(IncludePath)</IncludePath>
+    <IncludePath>$(SolutionDir)SDL2\include;$(SolutionDir)Shard2D\include;$(IncludePath)</IncludePath>
+    <LibraryPath>$(SolutionDir)SDL2\lib\x64;$(SolutionDir)Shard2D\lib\x64;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
-    <IncludePath>($SolutionDir)SDL2\include;($SolutionDir)Shard2D\include;$(IncludePath)</IncludePath>
+    <IncludePath>$(SolutionDir)SDL2\include;$(SolutionDir)Shard2D\include;$(IncludePath)</IncludePath>
+    <LibraryPath>$(SolutionDir)SDL2\lib\x86;$(SolutionDir)Shard2D\lib\x86;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <IncludePath>$(SolutionDir)SDL2\include;$(SolutionDir)Shard2D\include;$(IncludePath)</IncludePath>
@@ -157,11 +159,17 @@ start xcopy /E /Y /R  "$(SolutionDir)SDL2\lib\x64\*.dll" "$(SolutionDir)x64\Debu
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="src\Checkbox\Checkbox.cpp" />
     <ClCompile Include="CustomMain.cpp" />
     <ClCompile Include="Shard2D_AdvancedUI.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="src\Checkbox\Checkbox.h" />
     <ClInclude Include="CustomMain.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="Assets\AdvancedUI\Checkbox\CheckBoxEmptyEdited.PNG" />
+    <Image Include="Assets\AdvancedUI\Checkbox\CheckBoxSelectedEdited.PNG" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
