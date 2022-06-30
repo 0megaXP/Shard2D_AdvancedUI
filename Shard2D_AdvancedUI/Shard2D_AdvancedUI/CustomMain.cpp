@@ -6,10 +6,15 @@ void CustomMain::Init()
 {
 	checkbox = new Checkbox();
 	AddToStage(checkbox);
-	checkbox->x = 200;
-	checkbox->y = 200;
+	checkbox->x = 20;
+	checkbox->y = 20;
+
+	checkbox->CreateTextField("Assets/Fonts/arial.ttf");
+	checkbox->GetTextField()->showDebugRect = true;
+	//checkbox->SetEnabled(false);
 }
 
 void CustomMain::Update()
 {
+
 }

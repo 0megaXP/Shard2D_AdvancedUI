@@ -168,8 +168,18 @@ start xcopy /E /Y /R  "$(SolutionDir)SDL2\lib\x64\*.dll" "$(SolutionDir)x64\Debu
     <ClInclude Include="CustomMain.h" />
   </ItemGroup>
   <ItemGroup>
+    <Image Include="Assets\AdvancedUI\Checkbox\CheckBoxEmpty.PNG" />
     <Image Include="Assets\AdvancedUI\Checkbox\CheckBoxEmptyEdited.PNG" />
+    <Image Include="Assets\AdvancedUI\Checkbox\CheckBoxSelected.PNG" />
     <Image Include="Assets\AdvancedUI\Checkbox\CheckBoxSelectedEdited.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <Font Include="Assets\Fonts\arial.ttf" />
+    <Font Include="Assets\Fonts\arialbd.ttf" />
+    <Font Include="Assets\Fonts\arialbi.ttf" />
+    <Font Include="Assets\Fonts\ariali.ttf" />
+    <Font Include="Assets\Fonts\ariblk.ttf" />
+    <Font Include="Assets\Fonts\FiveBoroughsHandwriting.ttf" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

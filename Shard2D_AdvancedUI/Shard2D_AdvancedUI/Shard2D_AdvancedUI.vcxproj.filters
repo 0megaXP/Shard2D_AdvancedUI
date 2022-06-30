@@ -40,5 +40,19 @@
     <Image Include="Assets\AdvancedUI\Checkbox\CheckBoxSelectedEdited.PNG">
       <Filter>Resource Files</Filter>
     </Image>
+    <Image Include="Assets\AdvancedUI\Checkbox\CheckBoxSelected.PNG">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Assets\AdvancedUI\Checkbox\CheckBoxEmpty.PNG">
+      <Filter>Resource Files</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Font Include="Assets\Fonts\arial.ttf" />
+    <Font Include="Assets\Fonts\arialbd.ttf" />
+    <Font Include="Assets\Fonts\arialbi.ttf" />
+    <Font Include="Assets\Fonts\ariali.ttf" />
+    <Font Include="Assets\Fonts\ariblk.ttf" />
+    <Font Include="Assets\Fonts\FiveBoroughsHandwriting.ttf" />
   </ItemGroup>
 </Project>
