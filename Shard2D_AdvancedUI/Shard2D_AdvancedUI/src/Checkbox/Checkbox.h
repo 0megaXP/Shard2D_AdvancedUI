@@ -9,7 +9,7 @@ namespace Shard2D
 	{
 	public:
 
-		Checkbox(SDL_Color checkColor = SDL_Color(0,0,210));
+		Checkbox(SDL_Color checkColor = SDL_Color(64,255,255));
 		~Checkbox();
 
 	public:
@@ -42,6 +42,10 @@ namespace Shard2D
 		Returns the Checkbox's TextField
 		*/
 		TextField* GetTextField();
+		/*
+		Get the color of the entitiy (the alpha of the color is ignored)
+		*/
+		SDL_Color GetColor() override;
 
 	private:
 

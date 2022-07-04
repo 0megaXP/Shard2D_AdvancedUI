@@ -6,8 +6,8 @@ namespace Shard2D
 {
 	Checkbox::Checkbox(SDL_Color newCheckColor)
 		: checkColor(newCheckColor), 
-		_baseCheckboxImage(M_AssetsManager->GetImageFromPNG("Assets/AdvancedUI/Checkbox/CheckBoxEmpty.png")),
-		_checkboxImage(M_AssetsManager->GetImageFromPNG("Assets/AdvancedUI/Checkbox/CheckBoxSelected.png"))	
+		_baseCheckboxImage(ShardAssets->GetImageFromPNG("Assets/AdvancedUI/Checkbox/CheckBoxEmpty.png")),
+		_checkboxImage(ShardAssets->GetImageFromPNG("Assets/AdvancedUI/Checkbox/CheckBoxSelected.png"))	
 	{
 		AddEventListener<MouseEvent, Checkbox>(MouseEvent::LeftButtonPressed, &Checkbox::CheckboxPressed, this);
 	}
@@ -52,13 +52,17 @@ namespace Shard2D
 
 		AddChild(_textField);
 		_textField->x = 25;
-		_textField->y = 0;
-		//_textField->y = -_textField->height / 2;	// Correct in Shard2D 0.1.1
+		_textField->y = -_textField->height / 2 + _baseCheckboxImage->GetHeight() / 2;	// Allign the text's y with the checkbox's y
 	}
 
 	TextField* Checkbox::GetTextField()
 	{
 		return _textField;
+	}
+
+	SDL_Color Checkbox::GetColor()
+	{
+		return !IsChecked() ? Entity::GetColor() : checkColor;
 	}
 
 	void Checkbox::CheckboxPressed(MouseEvent* event)

@@ -10,7 +10,7 @@ void CustomMain::Init()
 	checkbox->y = 20;
 
 	checkbox->CreateTextField("Assets/Fonts/arial.ttf");
-	checkbox->GetTextField()->showDebugRect = true;
+	//checkbox->GetTextField()->showDebugRect = true;
 	//checkbox->SetEnabled(false);
 }
 
