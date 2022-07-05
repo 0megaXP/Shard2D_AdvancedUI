@@ -45,7 +45,7 @@ namespace Shard2D
 		_dropdownMainText->x = _horizontalSpacing;
 		_dropdownMainText->y = _dropdownButton->height / 2 - _dropdownMainText->height / 2;	// Allign the text's y with the checkbox's y
 
-		_dropdownArrow->x = _horizontalSpacing * 2 + 100;
-		_dropdownButton->width = _horizontalSpacing * 3 + _dropdownArrow->width + 100;
+		_dropdownArrow->x = _horizontalSpacing * 2 + _dropdownMainText->width;
+		_dropdownButton->width = _horizontalSpacing * 3 + _dropdownArrow->width + _dropdownMainText->width;
 	}
 }

@@ -8,7 +8,7 @@ namespace Shard2D
 	{
 	public:
 
-		Dropdown(SDL_Color buttonColor = SDL_Color(128, 128, 128), int horizontalSpacing = 20);
+		Dropdown(SDL_Color buttonColor = SDL_Color(128, 128, 128), int horizontalSpacing = 15);
 		~Dropdown();
 
 	public:
