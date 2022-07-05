@@ -4,8 +4,8 @@
 
 namespace Shard2D
 {
-	Checkbox::Checkbox(SDL_Color newCheckColor)
-		: checkColor(newCheckColor), 
+	Checkbox::Checkbox(SDL_Color newCheckColor)	:
+		checkColor(newCheckColor), 
 		_baseCheckboxImage(ShardAssets->GetImageFromPNG("Assets/AdvancedUI/Checkbox/CheckBoxEmpty.png")),
 		_checkboxImage(ShardAssets->GetImageFromPNG("Assets/AdvancedUI/Checkbox/CheckBoxSelected.png"))	
 	{

@@ -159,11 +159,13 @@ start xcopy /E /Y /R  "$(SolutionDir)SDL2\lib\x64\*.dll" "$(SolutionDir)x64\Debu
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="src\Dropdown\Dropdown.cpp" />
     <ClCompile Include="src\Checkbox\Checkbox.cpp" />
     <ClCompile Include="CustomMain.cpp" />
     <ClCompile Include="Shard2D_AdvancedUI.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="src\Dropdown\Dropdown.h" />
     <ClInclude Include="src\Checkbox\Checkbox.h" />
     <ClInclude Include="CustomMain.h" />
   </ItemGroup>
@@ -172,6 +174,8 @@ start xcopy /E /Y /R  "$(SolutionDir)SDL2\lib\x64\*.dll" "$(SolutionDir)x64\Debu
     <Image Include="Assets\AdvancedUI\Checkbox\CheckBoxEmptyEdited.PNG" />
     <Image Include="Assets\AdvancedUI\Checkbox\CheckBoxSelected.PNG" />
     <Image Include="Assets\AdvancedUI\Checkbox\CheckBoxSelectedEdited.PNG" />
+    <Image Include="Assets\AdvancedUI\Dropdown\DropdownArrow.png" />
+    <Image Include="Assets\AdvancedUI\Dropdown\DropdownButton.png" />
   </ItemGroup>
   <ItemGroup>
     <Font Include="Assets\Fonts\arial.ttf" />

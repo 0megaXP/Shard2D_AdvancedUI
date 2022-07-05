@@ -24,12 +24,18 @@
     <ClCompile Include="src\Checkbox\Checkbox.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="src\Dropdown\Dropdown.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="CustomMain.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="src\Checkbox\Checkbox.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Dropdown\Dropdown.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
@@ -44,6 +50,12 @@
       <Filter>Resource Files</Filter>
     </Image>
     <Image Include="Assets\AdvancedUI\Checkbox\CheckBoxEmpty.PNG">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Assets\AdvancedUI\Dropdown\DropdownArrow.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Assets\AdvancedUI\Dropdown\DropdownButton.png">
       <Filter>Resource Files</Filter>
     </Image>
   </ItemGroup>
